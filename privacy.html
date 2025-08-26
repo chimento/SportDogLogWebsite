@@ -7,30 +7,50 @@
 <body style="font-family: Arial, sans-serif; padding: 2em; max-width: 800px; margin: auto;">
   <h1>Privacy Policy</h1>
   <p><strong>Effective Date:</strong> August 22, 2025</p>
-  <p>Welcome to SportDogLog (“we,” “us,” “our”). This Privacy Policy explains how we collect, use, and protect information when you use the SportDogLog app or visit our website (<strong>SportDogLog.com</strong>).</p>
+  <p>Welcome to SportDogLog (“we,” “us,” “our”). This Privacy Policy explains how we collect, use, and protect information when you use the SportDogLog app or visit our website (<strong>SportDogLog.com</strong>) (collectively, “Services”).</p>
+
   <h2>1. Information We Collect</h2>
-  <p>We prioritize minimal data collection:</p>
   <ul>
-    <li>Bird sightings, dog performance logs, and harvest events are stored locally or optionally synced via iCloud.</li>
-    <li>No personal identifying information is collected.</li>
-    <li>Optional, anonymized analytics may be used to improve app performance.</li>
+    <li><strong>User Authentication Data:</strong> We use <strong>Clerk</strong> to manage user authentication. Clerk processes personal information (e.g., email, contact details) for sign-in only. We are the data controller; Clerk acts as a processor.</li>
+    <li><strong>Logged Data:</strong> Your logs (dog performance, bird sightings, harvest events) are stored in <strong>Supabase</strong> with strict Row-Level Security, ensuring only you access your data. </li>
+    <li><strong>Backups & Storage:</strong> Supabase automatically takes encrypted daily backups and supports point-in-time recovery (where enabled). </li>
+    <li><strong>Optional Analytics:</strong> Anonymous usage data may be collected to improve app performance and reliability.</li>
   </ul>
-  <h2>2. How We Use Data</h2>
+
+  <h2>2. How We Use Your Data</h2>
   <ul>
-    <li>Deliver core app features</li>
-    <li>Improve app reliability and usability</li>
-    <li>Debugging and performance monitoring</li>
+    <li>Authenticate users securely via Clerk.</li>
+    <li>Store and retrieve user-specific logs in Supabase.</li>
+    <li>Restore data when needed using encrypted backups.</li>
+    <li>Analyze anonymized usage for app enhancements.</li>
   </ul>
+
   <h2>3. Data Storage & Security</h2>
-  <p>All data resides locally or within the user’s iCloud account. No user account is required or stored on our servers.</p>
+  <ul>
+    <li><strong>Clerk:</strong> Authentication data is protected under Clerk’s SOC 2 security framework.</li>
+    <li><strong>Supabase:</strong> Your logs are encrypted at rest with AES‑256, transmitted over TLS, and governed by robust RLS policies.</li>
+    <li><strong>Backups:</strong> Daily encrypted backups and optional point‑in‑time recovery enhance resilience.</li>
+  </ul>
+
   <h2>4. Third-Party Services</h2>
-  <p>We use Apple’s iCloud for syncing, and adhere to their privacy policies. We do not sell or share your data.</p>
-  <h2>5. Your Privacy Rights</h2>
-  <p>You can delete your data at any time within the app. No personal identifiers are stored by us.</p>
+  <ul>
+    <li><strong>Clerk:</strong> Handles user sign-in, social login, passkeys, and MFA. We do not share your data with advertisers.</li>
+    <li><strong>Supabase:</strong> Manages data storage and backups—data remains under your control; RLS ensures access is restricted.</li>
+  </ul>
+
+  <h2>5. Your Rights</h2>
+  <ul>
+    <li>Manage or delete your data anytime within the app.</li>
+    <li>Only you (authenticated) can access your logs.</li>
+    <li>Questions or requests? Email <a href="mailto:support@sportdoglog.com">support@sportdoglog.com</a>.</li>
+  </ul>
+
   <h2>6. Policy Updates</h2>
-  <p>We may revise this policy. Continued use indicates acceptance of any updates.</p>
+  <p>We may update this policy over time. Continued use signifies acceptance of any changes.</p>
+
   <h2>7. Contact</h2>
-  <p>Email us at <a href="mailto:support@sportdoglog.com">support@sportdoglog.com</a></p>
+  <p>For privacy-related questions, email <a href="mailto:support@sportdoglog.com">support@sportdoglog.com</a>.</p>
+
   <p><a href="index.html">← Back to Home</a></p>
 </body>
 </html>
