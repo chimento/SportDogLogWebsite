@@ -30,6 +30,27 @@
       margin-top: 40px;
       font-size: 0.9em;
     }
+    .instagram-section {
+      margin: 48px auto 0;
+      max-width: 960px;
+    }
+    .instagram-section h2 {
+      font-size: 1.4em;
+      color: #5a381e;
+      margin-bottom: 4px;
+    }
+    .instagram-section .ig-handle {
+      font-size: 0.95em;
+      color: #888;
+      margin-bottom: 20px;
+    }
+    .instagram-section .ig-handle a {
+      color: #5a381e;
+      text-decoration: none;
+    }
+    .instagram-section .ig-handle a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +60,20 @@
   <a href="https://apps.apple.com/us/app/sportdoglog/id6749470983?itscg=30200&itsct=apps_box_badge&mttnsubad=6749470983" style="display: inline-block;">
     <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1757289600" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
   </a>
+  <!-- Instagram Feed
+       Setup (one time):
+       1. Go to https://behold.so and create a free account.
+       2. Connect the SportDogLog Instagram account.
+       3. Create a feed and copy your Widget ID (looks like: AbCd1234XyZ).
+       4. Replace YOUR_WIDGET_ID below with that ID.
+  -->
+  <section class="instagram-section">
+    <h2>Follow Along on Instagram</h2>
+    <p class="ig-handle"><a href="https://www.instagram.com/sportdoglog/" target="_blank" rel="noopener">@sportdoglog</a></p>
+    <div id="behold-widget-YOUR_WIDGET_ID"></div>
+    <script src="https://w.behold.so/widget.js" type="module"></script>
+  </section>
+
   <footer>
     <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
   </footer>
