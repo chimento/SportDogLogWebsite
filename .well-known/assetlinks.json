@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.chimento.sportdoglog.android",
+    "sha256_cert_fingerprints": [
+      "F3:CF:C8:F2:66:21:C7:CA:E9:19:4D:BE:99:E9:07:9E:2C:72:E9:36:28:DC:31:84:97:68:4C:6C:F0:FE:F7:BD"
+    ]
+  }
+}]
